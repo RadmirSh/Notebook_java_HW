@@ -37,5 +37,30 @@ public static void main(String[] args) {
     int criterion = scanner.nextInt();
     scanner.nextLine();
 
+    switch (criterion) {
+        case 1:
+            System.out.print("Введите минимальный объем ОЗУ: ");
+            int minRam = scanner.nextInt();
+            filters.put("ram", minRam);
+            break;
+        case 2:
+            System.out.print("Введите минимальный объем ЖД (в ГБ): ");
+            int minHdd = scanner.nextInt();
+            filters.put("hdd", minHdd);
+            break;
+        case 3:
+            System.out.print("Введите операционную систему: ");
+            String os = scanner.nextLine();
+            filters.put("os", os);
+            break;
+        case 4:
+            System.out.print("Введите цвет: ");
+            String color = scanner.nextLine();
+            filters.put("color", color);
+            break;
+        default:
+            System.out.println("Некорректный номер критерия");
+            break;
+    }
 
 }
