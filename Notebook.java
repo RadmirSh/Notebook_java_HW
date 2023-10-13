@@ -15,4 +15,17 @@ public class Laptop {
         this.color = color;
     }
 
+// Геттеры и сеттеры для полей класса
+
+public static void main(String[] args) {
+    // Создание множества ноутбуков
+    Set<Laptop> laptops = new HashSet<>();
+    laptops.add(new Laptop("Lenovo", 8, 256, "Windows 10", "Black"));
+    laptops.add(new Laptop("Dell", 16, 512, "Windows 10", "Silver"));
+    laptops.add(new Laptop("HP", 8, 512, "Windows 10", "White"));
+    laptops.add(new Laptop("Asus", 16, 1_000, "Windows 10", "Black"));
+
+
+
+
 }
