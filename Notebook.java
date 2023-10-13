@@ -63,4 +63,15 @@ public static void main(String[] args) {
             break;
     }
 
+    // Фильтрация ноутбуков и вывод результата
+    Set<Laptop> filteredLaptops = filterLaptops(laptops, filters);
+    System.out.println("Результаты фильтрации:");
+        for (Laptop laptop : filteredLaptops) {
+        System.out.println(laptop.model);
+    }
+    
+}
+
+
+
 }
